@@ -102,7 +102,7 @@ student-registration/
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Pranjalkanojiya/DIS_Internship_Task1>
 ```
 
 2. Install dependencies
