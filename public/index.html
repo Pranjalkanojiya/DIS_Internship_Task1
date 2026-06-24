@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="card">
+    <h2>Student Registration</h2>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="text" id="enrollment" placeholder="Enrollment Number" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <input type="text"
+            id="mobile"
+            placeholder="Mobile Number"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            required>
+
+        <select id="branch" required>
+            <option value="">Select Branch</option>
+            <option>Computer Engineering</option>
+            <option>Information Technology</option>
+            <option>Mechanical Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Electrical Engineering</option>
+            <option>Industrial Production Engineering</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+    
+    <button type="button" id="viewBtn">View All Students</button>
+</div>
+<div id="tableContainer" style="display:none;">
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Enrollment No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
